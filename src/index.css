@@ -1,7 +1,5 @@
-*{
-    background: #333333;
-    margin:0;
-    padding: 0;
-    color: azure;
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
-

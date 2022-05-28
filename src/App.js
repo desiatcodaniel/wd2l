@@ -1,16 +1,19 @@
-import '@fontsource/roboto/300.css';
-import '@fontsource/roboto/400.css';
-import '@fontsource/roboto/500.css';
-import '@fontsource/roboto/700.css';
-import image from './images/dotalogo.png'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import Notes from './pages/Notes'
+import Create from './pages/Create'
 
 function App() {
   return (
-    <div style={{fontFamily:"roboto"}}>
-      <header className="App-header">
-        <img src={image} style={{width:"100px"}} alt="logo" />
-      </header>
-    </div>
+    <Router>
+      <Switch>
+        <Route exact path="/">
+          <Notes />
+        </Route>
+        <Route path="/create">
+          <Create />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 
